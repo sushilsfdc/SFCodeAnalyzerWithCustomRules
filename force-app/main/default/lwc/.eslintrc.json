@@ -11,4 +11,9 @@
       }
     }
   ]
+"rules": {
+    "@lwc/lwc/no-deprecated": "error",
+    "@lwc/lwc/valid-api": "error",
+    "@lwc/lwc/no-document-query": "error"
+  }  
 }
