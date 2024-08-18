@@ -13,13 +13,12 @@ jobs:
         with:
           format: "csv"
       - name: Prepare files for code scanner
-        if: steps.files.outputs.added != ''
         run: |
           echo "Creating directory scanner_files"  
           mkdir scanner_files
-          IFS=',' read -ra added_files_split <<< "${{ steps.files.outputs.added }}"
-          for addedFile in "${added_files_split[@]}"; do
-              cp "$addedFile" scanner_files
+          IFS=',' read -ra added__modified_files_split <<< "${{ steps.files.outputs.added_modified }}"
+          for addedModifiedFile in "${added__modified_files_split[@]}"; do
+              cp "$addedModifiedFile" scanner_files
           done
 
       - name: Install modules
