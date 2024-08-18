@@ -1,4 +1,4 @@
-# Salesforce Code Analyzer
+# Salesforce Code Analyzer Using Custom Rules
 
 This project has one git workflow which uses salesforce code analyzer with custom PMD rule and ENT rules file. Here are steps followed in the workflow
 
