@@ -9,4 +9,4 @@ public with sharing class BadApexClass {
             throw new AuraHandledException(e.getMessage());
         }
     }
-}
+} 
