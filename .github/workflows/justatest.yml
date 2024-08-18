@@ -32,7 +32,7 @@ jobs:
         uses: forcedotcom/run-code-analyzer@v1
         with:
           run-command: run
-          run-arguments: --engine pmd,eslint-lwc --normalize-severity --target scanner_files --outfile results.html --pmdconfig pmd-rules-list.xml --eslintconfig .eslintrc.json
+          run-arguments: --engine pmd,eslint-lwc --normalize-severity --target scanner_files --outfile results.html --pmdconfig pmd-rules-list.xml --eslintconfig force-app/main/default/lwc/.eslintrc.json
           results-artifact-name: salesforce-code-analyzer-results
 
       - name: Check the outputs to determine whether to fail
